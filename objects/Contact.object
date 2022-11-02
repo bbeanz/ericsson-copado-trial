@@ -344,6 +344,18 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Contact_Ext_Id__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Contact external Id for Copado ADD</description>
+        <externalId>true</externalId>
+        <label>Contact Ext Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>Department</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -379,10 +391,6 @@
         <fullName>IndividualId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Jigsaw</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>LastCURequestDate</fullName>
@@ -502,6 +510,12 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Chaz_Contact_Validation_Rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Email ) &amp;&amp; ISBLANK( MobilePhone )</errorConditionFormula>
+        <errorMessage>Please enter a mobile phone number or email address before saving the Contact record.</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>GoogleMaps</fullName>
         <availability>online</availability>
