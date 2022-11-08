@@ -275,6 +275,18 @@
         <trackFeedHistory>true</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>New_Copado_Test__c</fullName>
+        <description>this is a test</description>
+        <externalId>false</externalId>
+        <inlineHelpText>this is a test</inlineHelpText>
+        <label>New Copado Test</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>NumberOfEmployees</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
